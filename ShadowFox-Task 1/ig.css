@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #151418; */
+  color: white;
+}
+
+/* Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(67, 10, 120);
+}
+
+.left {
+  font-size: 1.6rem;
+
+ 
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 23px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+nav ul li a:hover {
+  color: rgb(153, 153, 235);
+  cursor: pointer;
+}
+
+#element {
+  color: rgb(160, 160, 232);
+}
+
+.border {
+  border: 2px solid transparent;
+}
+
+.border:hover {
+  border: 2px solid white;
+}
+
+.btn {
+  display: inline-block;
+  width: 120px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #126ffa;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #0f5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: 2px solid #93c5fd;
+  outline-offset: 3px;
+}
+
+/* First Section */
+.first-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 23px;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  width: 30%;
+  color: white;
+  font-size: 3rem;
+  margin: 70px;
+  align-items: center;
+}
+
+.purple {
+  color: rgb(138, 103, 171);
+}
+
+.right-section {
+  width: 30%;
+  color: black;
+}
+
+.right-section img {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 300px;
+}
+
+/* Section Divider */
+hr {
+  border: 0;
+  height: 1.2px;
+  background-color: rgb(105, 93, 239);
+  margin: 40px 80px;
+}
+
+/* Container */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Card */
+.bigCard {
+  width: 90%;
+  max-width: 800px;
+  padding: 48px 38px;
+  background-color: #fff;
+  color: #151418;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+}
+
+/* Logo Container */
+.animated-logo {
+  height: 136px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+/* Logo Image */
+.img-css {
+  height: 120px;
+  width: 120px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* About Me Bio */
+.About-Bio {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: justify;
+  color: #151418;
+  line-height: 1.6;
+}
+
+/* Bio Section Title */
+.info-1 {
+  margin-top: 100px;
+  animation-duration: 1s;
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .right-section img {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Hero section css */
+
+
+.hero-section {
+  background: #121216;
+  color:white;
+  padding: 100px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-section .right img {
+  width: 300px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+/* Wave */
+.wave svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Optional: diagonal shape with clip-path */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #1c1c22;
+  clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+}
